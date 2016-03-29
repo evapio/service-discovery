@@ -1,0 +1,9 @@
+{
+  "ui": true,
+  "bootstrap": true,
+  "dns_config": {
+    "allow_stale": false
+  },
+  "data_dir": "/data",
+  "domain": "evap"
+}
