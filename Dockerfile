@@ -1,4 +1,4 @@
-FROM gliderlabs/consul-server
+FROM gliderlabs/consul-server:0.6
 COPY ./config /config/
 RUN mkdir -p /data
 ENTRYPOINT ["/bin/consul", "agent", "-server", "-config-dir=/config"]

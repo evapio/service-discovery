@@ -1,9 +1,12 @@
 {
-  "ui": true,
-  "bootstrap": true,
-  "dns_config": {
-    "allow_stale": false
-  },
-  "data_dir": "/data",
-  "domain": "evap"
+    "ui": true,
+    "bootstrap": true,
+    "dns_config": {
+        "allow_stale": false
+    },
+    "data_dir": "/data",
+    "domain": "evap",
+    "http_api_response_headers": {
+        "Access-Control-Allow-Origin": "*"
+    }
 }
