@@ -1,5 +1,3 @@
-FROM gliderlabs/consul-server:0.6
-COPY ./config /config/
-RUN mkdir -p /data
-ENTRYPOINT ["/bin/consul", "agent", "-server", "-config-dir=/config"]
-EXPOSE 8300 8301 8301/udp 8302 8302/udp 8400 8500 8600 8600/udp
+FROM consul:latest
+COPY ./config/ /consul/config/
+ENTRYPOINT ["/bin/consul", "agent", "-server","-config-dir=/consul/config"]
